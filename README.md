@@ -20,12 +20,12 @@ It is the first process (PID 1) that runs when the system boots and is responsib
 
 ⚙️ **Key Features of systemd**
 
-**Service Management** - Controls all background services (systemctl start/stop/status)  <br>
-**Parallel Boot** - Starts multiple services at once for faster boot times  <br>
-**Dependency Handling** - Ensures services start in the correct order  <br>
-**Logging (journald)** - Centralized system logging  <br>
-**Targets (like runlevels)** - Define system states (e.g., multi-user.target, graphical.target)  <br>
-**Timers** - Replace cron jobs for scheduled tasks (.timer units)  <br>
+ -  **Service Management** - Controls all background services (systemctl start/stop/status)  <br>
+ - **Parallel Boot** - Starts multiple services at once for faster boot times  <br>
+ - **Dependency Handling** - Ensures services start in the correct order  <br>
+ - **Logging (journald)** - Centralized system logging  <br>
+ - **Targets (like runlevels)** - Define system states (e.g., multi-user.target, graphical.target)  <br>
+ - **Timers** - Replace cron jobs for scheduled tasks (.timer units)  <br>
 
 <hr>
 
