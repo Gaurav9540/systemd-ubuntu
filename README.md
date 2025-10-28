@@ -2,6 +2,13 @@
 
 **Run java jar file in background using Systemd**
 
+<hr>
+
+🧩 **What is systemd ?**
+
+systemd is the system and service manager used by modern Linux distributions — including Ubuntu (from version 15.04 onward).
+
+<hr>
 
 **Step 1: Copy the JAR to /opt/myapp**
 
