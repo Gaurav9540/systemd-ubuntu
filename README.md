@@ -74,4 +74,12 @@ systemctl status myapp.service
 lsof -i :8086
 ```
 
+<hr>
+
+**Step 9: Check all running services on ubuntu**
+
+```ssh
+systemctl list-units --type=service --state=running
+```
+
 
