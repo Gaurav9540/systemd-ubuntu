@@ -18,6 +18,15 @@ It is the first process (PID 1) that runs when the system boots and is responsib
  - Managing targets (runlevels)
  - Think of systemd as the “brain” of your Linux system startup and service management.
 
+⚙️ **Key Features of systemd**
+
+**Service Management** - Controls all background services (systemctl start/stop/status)
+**Parallel Boot** - Starts multiple services at once for faster boot times
+**Dependency Handling** - Ensures services start in the correct order
+**Logging (journald)** - Centralized system logging
+**Targets (like runlevels)** - Define system states (e.g., multi-user.target, graphical.target)
+**Timers** - Replace cron jobs for scheduled tasks (.timer units)
+
 <hr>
 
 **Step 1: Copy the JAR to /opt/myapp**
