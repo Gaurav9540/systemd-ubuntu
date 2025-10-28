@@ -41,3 +41,22 @@ RestartSec=10
 [Install]
 WantedBy=multi-user.target
 ```
+
+<hr>
+
+**Step 3: Enable and Start the Service**
+
+```ssh
+systemctl daemon-reload
+```
+
+```ssh
+systemctl enable myapp.service
+```
+
+```ssh
+systemctl start myapp.service
+```
+
+
+
