@@ -94,7 +94,7 @@ systemctl status myapp.service
 
 <hr>
 
-**Step 8: Confirm It’s Running on Port 8086**
+**Step 5: Confirm It’s Running on Port 8086**
 
 ```ssh
 lsof -i :8086
@@ -102,7 +102,7 @@ lsof -i :8086
 
 <hr>
 
-**Step 9: Check all running services on ubuntu**
+**Step 6: Check all running services on ubuntu**
 
 ```ssh
 systemctl list-units --type=service --state=running
