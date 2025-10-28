@@ -108,4 +108,41 @@ lsof -i :8086
 systemctl list-units --type=service --state=running
 ```
 
+<hr>
 
+**View Live Logs**
+To stream logs in real-time:
+
+```ssh
+journalctl -u license-app.service -f
+```
+
+View All Logs (From the Start)
+
+```ssh
+journalctl -u license-app.service
+```
+
+View Logs for a Specific Time Range
+
+```ssh
+journalctl -u license-app.service --since "1 hour ago"
+```
+
+Command 1 — Show Last 10 Lines of Logs
+
+```ssh
+journalctl -u license-app.service -n 10
+```
+
+Show Logs From the Last 5 Minutes
+
+```ssh
+journalctl -u license-app.service --since "5 minutes ago"
+```
+
+Show Logs From the Last 5 Minutes + Follow Live
+
+```ssh
+journalctl -u license-app.service --since "5 minutes ago" -f
+```
