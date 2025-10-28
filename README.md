@@ -22,3 +22,22 @@ Create a new service:
 vim /etc/systemd/system/myapp.service
 ```
 
+Paste this:
+
+```ssh
+Paste this:
+[Unit]
+Description=License App Service
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/myapp
+ExecStart=/usr/bin/java -jar /opt/myapp/JWT-with-Spring-Security-0.0.1-SNAPSHOT.jar --server.port=8086
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
