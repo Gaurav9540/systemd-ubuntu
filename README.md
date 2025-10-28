@@ -58,5 +58,20 @@ systemctl enable myapp.service
 systemctl start myapp.service
 ```
 
+<hr>
+
+**Step 4: Check Status and Logs**
+
+```ssh
+systemctl status myapp.service
+```
+
+<hr>
+
+**Step 8: Confirm It’s Running on Port 8086**
+
+```ssh
+lsof -i :8086
+```
 
 
