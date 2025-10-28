@@ -8,6 +8,16 @@
 
 systemd is the system and service manager used by modern Linux distributions — including Ubuntu (from version 15.04 onward).
 
+It is the first process (PID 1) that runs when the system boots and is responsible for:
+
+ - Starting and stopping all other system services
+ - Managing dependencies between services
+ - Handling system startup and shutdown
+ - Logging (via journald)
+ - Mounting filesystems
+ - Managing targets (runlevels)
+ - Think of systemd as the “brain” of your Linux system startup and service management.
+
 <hr>
 
 **Step 1: Copy the JAR to /opt/myapp**
