@@ -58,8 +58,8 @@ After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/opt/myapp
-ExecStart=/usr/bin/java -jar /opt/myapp/JWT-with-Spring-Security-0.0.1-SNAPSHOT.jar --server.port=8086
+WorkingDirectory=/root/linense01/license_app/target
+ExecStart=/usr/bin/java -jar /root/linense01/license_app/target/JWT-with-Spring-Security-0.0.1-SNAPSHOT.jar --server.port=8086
 SuccessExitStatus=143
 Restart=on-failure
 RestartSec=10
