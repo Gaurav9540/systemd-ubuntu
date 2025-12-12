@@ -45,21 +45,20 @@ cp /root/license_app/target/JWT-with-Spring-Security-0.0.1-SNAPSHOT.jar /opt/mya
 Create a new service:
 
 ```ssh
-vim /etc/systemd/system/myapp.service
+vim /etc/systemd/system/matrimony.service
 ```
 
 Paste this:
 
 ```ssh
-Paste this:
 [Unit]
-Description=License App Service
+Description=Matrimony App Service
 After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/root/linense01/license_app/target
-ExecStart=/usr/bin/java -jar /root/linense01/license_app/target/JWT-with-Spring-Security-0.0.1-SNAPSHOT.jar --server.port=8086
+WorkingDirectory=/root/matrimony/Matrimony_13/target
+ExecStart=/usr/bin/java -jar /root/matrimony/Matrimony_13/target/JWT-with-Spring-Security-0.0.1-SNAPSHOT.jar --server.port=8095
 SuccessExitStatus=143
 Restart=on-failure
 RestartSec=10
@@ -77,11 +76,11 @@ systemctl daemon-reload
 ```
 
 ```ssh
-systemctl enable myapp.service
+systemctl enable matrimony.service
 ```
 
 ```ssh
-systemctl start myapp.service
+systemctl start matrimony.service
 ```
 
 <hr>
@@ -89,7 +88,7 @@ systemctl start myapp.service
 **Step 4: Check Status and Logs**
 
 ```ssh
-systemctl status myapp.service
+systemctl status matrimony.service
 ```
 
 <hr>
